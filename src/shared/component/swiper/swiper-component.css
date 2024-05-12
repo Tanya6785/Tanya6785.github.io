@@ -1,0 +1,16 @@
+.swiper {
+  padding: 0 70px !important;
+  box-sizing: border-box !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #606c38 !important;
+}
+
+@media screen and (max-width: 576px) {
+  .swiper {
+    padding: 0 50px !important;
+    box-sizing: border-box !important;
+  }
+}

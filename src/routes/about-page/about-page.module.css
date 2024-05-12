@@ -1,0 +1,129 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 121.02px;
+  color: #606c38;
+}
+
+.aboutInner {
+  margin-top: 84px;
+  border-radius: 154px;
+  background-color: #606c38;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutInnerTitle {
+  margin: 0 auto;
+  max-width: 677px;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48.41px;
+  text-align: center;
+  color: #dda15e;
+}
+
+.aboutInnerReverse {
+  padding-right: 84px;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0 55px;
+  background-color: #606c38;
+  justify-content: space-between;
+  border-radius: 173px;
+}
+
+.aboutInnerReverseContent {
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0;
+}
+
+.aboutInnerReverseContentTitle {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 77.45px;
+  color: #dda15e;
+}
+
+.aboutInnerReverseContentAddress {
+  max-width: 490px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48.41px;
+  color: #dda15e;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutInner {
+    border-radius: 122px;
+  }
+  .aboutInner img {
+    width: 475px;
+  }
+
+  .aboutInnerTitle {
+    font-size: 25px;
+    line-height: 1;
+  }
+
+  .aboutInnerReverse {
+    border-radius: 122px;
+  }
+  .aboutInnerReverse img {
+    width: 475px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aboutInner {
+    padding: 40px;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  .aboutInner img {
+    width: 300px;
+  }
+
+  .aboutInnerReverse {
+    padding: 40px;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .aboutInnerReverse img {
+    width: 300px;
+  }
+
+  .aboutInnerReverseContent {
+    gap: 20px 0;
+  }
+
+  .aboutInnerReverseContentTitle,
+  .aboutInnerReverseContentAddress {
+    font-size: 25px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .aboutInner,
+  .aboutInnerReverse {
+    margin-top: 35px;
+    border-radius: 60px;
+  }
+
+  .aboutInnerTitle,
+  .aboutInnerReverseContentTitle,
+  .aboutInnerReverseContentAddress {
+    font-size: 15px;
+    line-height: 1;
+  }
+}

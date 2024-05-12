@@ -1,0 +1,142 @@
+.record {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  color: #283618;
+}
+
+.recordInner {
+  margin-top: 65px;
+  padding: 70px 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #dda15e;
+  border-radius: 173px;
+}
+
+.recordInnerItem {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+}
+
+.recordInnerLabel {
+  user-select: none;
+  font-size: 36px;
+  display: block;
+}
+
+.recordInnerInput {
+  padding: 10px;
+  background-color: #606c38;
+  border-radius: 15px;
+  color: #fefae0;
+}
+
+.recordInnerService {
+  user-select: none;
+}
+
+.recordCheckbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.recordCheckboxLabel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.recordCheckboxView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: rgba(40, 54, 24, 0.34);
+  transition: 0.3s;
+}
+
+.recordCheckboxIcon {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.recordCheckbox:checked + .recordCheckboxView {
+  background-color: #606c38;
+}
+
+.recordCheckbox:checked + .recordCheckboxView .recordCheckboxIcon {
+  opacity: 1;
+}
+
+.recordInnerText {
+  max-width: 355px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #465122;
+}
+
+.recordBtn {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 75px;
+  margin-top: 25px;
+  color: #fefae0;
+  background-color: #606c38;
+  border-radius: 80px;
+  transition: all 0.3s;
+}
+
+.recordBtn:hover {
+  background: #283618;
+}
+
+.recordLink {
+  color: #283618;
+  text-decoration: underline !important;
+}
+
+.recordText {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .recordInner {
+    gap: 0 15px;
+  }
+
+  .recordInnerText {
+    margin-bottom: 30px;
+  }
+
+  .recordInnerLabel {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .recordInner {
+    flex-direction: column;
+    border-radius: 115px;
+  }
+
+  .recordInnerText {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .recordInner {
+    padding: 70px 20px;
+    border-radius: 60px;
+  }
+}
