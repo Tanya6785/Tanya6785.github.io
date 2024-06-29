@@ -1,0 +1,170 @@
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 95%;
+    height: 24px;
+    margin-bottom: 10px;
+  }
+  
+  output {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin: 0 5px 10px;
+  
+    text-align: center;
+  }
+  
+  input,
+  output {
+    padding: 2px 5px;
+  
+    font-family: "Roboto", sans-serif;
+    vertical-align: middle;
+  
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    height: auto;
+    margin: 0 5px;
+    padding: 6px 15px;
+    background-color: #3f8a7c;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1.5em; /* Расстояние от текста до края */
+    color: #fff; /* Белый цвет текста */
+    border: none; /* Убираем рамку */
+    font-size: 1em; /* Размер шрифта */
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3); /* Тень у надписи */
+    margin-right: 1rem; /* Расстояние справа */
+    transition: background-color 0.4s, box-shadow 0.2s 0.3s; /* Время перехода */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .one-third-width {
+    width: 33.3%;
+  }
+  
+  .two-third-width {
+    width: 66.6%;
+  }
+  
+  .half-width {
+    width: 50%;
+  }
+  
+  .one-third-width,
+  .two-third-width,
+  .half-width {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  
+  .one-third-width input,
+  .two-third-width input {
+    width: 80%;
+  }
+  
+  .half-width input {
+    width: 80%;
+  }
+  
+  .half-width input[type="range"] {
+    width: 50%;
+  }
+  
+  .output-area {
+    vertical-align: top;
+  }
+
+    .footer {
+        position: fixed; /* Фиксированное положение */
+        left: 0; bottom: 0; /* Левый нижний угол */
+        padding: 10px; /* Поля вокруг текста */
+        background: #39b54a; /* Цвет фона */
+        color: #fff; /* Цвет текста */
+        width: 100%; /* Ширина слоя */
+       }
+
+   .header {
+    background-color: #2e34e5;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: center; 
+    width: 99%;   
+    font-size: 19px;
+    font-weight: bold;
+    color: #fafaff;  
+   }
+
+   .formname input[type=checkbox] {
+    display:none;
+}
+.formname input[type=checkbox] + label {
+    display: block;
+    position: relative;
+    margin: 12px 0 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+.formname input[type=checkbox] + label:hover {
+    color:#337AB7;
+}
+.formname input[type=checkbox] + label:before {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    left: -30px;
+    border: 1px solid #808080;
+}
+.formname input[type=checkbox]:checked + label:before{
+    content: '\2714';
+    color:#337AB7;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #337AB7; 
+}
+.formname input[type=submit] {
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 30px;
+    border: 1px solid #275F8B;
+    background: #337AB7;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: .4s all;
+    font-weight: bold;
+}
+.formname input[type=submit]:hover {
+    background: #275F8B;
+}
+.formname input[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
+}

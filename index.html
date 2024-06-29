@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Область для вывода результата</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="page-header">Форма бронирования дорожки</header>
+    <main>
+      <form>
+        <label for="search">Имя</label>
+        <input type="search" id="search" name="search" pattern="[А-Яа-яЁё ]+" required>
+        <div>
+            <p><label for="telephone">Телефон</label>
+              <small>Формат: 123-456-78901</small>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{5}" required />
+        </div>
+            <label for="start">Дата бронирования:</label>
+            <input type="date" id="start" name="trip-start" value="2024-06-30" min="2024-06-30" max="2024-12-31" required/>
+        <div class="half-width output-area">
+          <output name='daysoutput'>
+        </div>
+        <div> 
+            <label for="time">Время начала брони: </label>
+            <input type="time" id="time" name="time" required/>        
+        </div>
+        <label for="fruits">Длительность бронирования:</label>
+        <select id="fruits" name="fruits" required>
+          <option value="one">1 час</option>
+          <option value="three">3 часа</option>
+          <option value="five">5 часов</option>
+        </select>
+        <div class="formname">
+            <input id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;" />
+            <label for="checkbox">Настоящим подтверждаю, что я согласен</label>    
+            <input type="submit" disabled="disabled" name="submit" id="submit" value="Отправить" />
+        </div>
+        </form>
+      </form>
+    </main>
+    <footer class="page-footer"> СИЗИФ 2024. Удачной игры! </footer>
+    <script>
+    if (isValid) {
+      document.getElementById('successMessage').innerText = 'Form submitted successfully!';
+    }
+       return isValid;
+     </script>
+  </body>
+</html>
